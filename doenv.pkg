@@ -1,0 +1,11 @@
+d statapush: Stata module for loading environment variables as locals
+d
+d Requires: Stata version 12.1
+d
+d Distribution-Date: 10202018
+d
+d Authors: Vikram Jambulapati
+d Contact: vikjam@ucsd.edu
+d
+f doenv.ado
+f doenv.sthlp
