@@ -1,0 +1,3 @@
+v 0.1
+d Vikram Jambulapati, vikjam@ucsd.edu
+p 'doenv': load .env variables as locals
