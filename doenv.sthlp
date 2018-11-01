@@ -9,7 +9,7 @@
 {title:Title}
 
 {p2colset 5 19 21 2}{...}
-{p2col :{hi:binscatter} {hline 2}}{p_end}
+{p2col :{hi:doenv} {hline 2}}{p_end}
 {p2colreset}{...}
 
 {marker syntax}{title:Syntax}
@@ -27,13 +27,13 @@ where {it:using} is a string
 {synopthdr :options}
 {synoptline}
 {syntab :Main}
-{synopt :{opth prefix(string)}}plot separate series for each group (see {help doenv##prefix_notes:}){p_end}
+{synopt :{opth prefix(string)}} Add a prefix to the local){p_end}
 
 {marker description}{...}
 {title:Description}
 
 {pstd}
-{opt binscatter} generates binned scatterplots, and is optimized for speed in large datasets.
+{opt binscatter} load environment variables from a .env file.
 
 {pstd}
 Environment variables are often stored in a .env file in the project directory. Examples of such variables include API keys, file paths, URLs and much more that you don't want to share when working on a project. {cmd:doenv} loads these variables into locals in Stata.
