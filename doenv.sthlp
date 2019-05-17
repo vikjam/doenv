@@ -9,7 +9,7 @@
 {title:Title}
 
 {p2colset 5 19 21 2}{...}
-{p2col :{hi:doenv} {hline 2}}{p_end}
+{p2col :{hi:doenv} {hline 2}}Load environment variables{p_end}
 {p2colreset}{...}
 
 {marker syntax}{title:Syntax}
@@ -33,10 +33,10 @@ where {it:using} is a string
 {title:Description}
 
 {pstd}
-{opt binscatter} load environment variables from a .env file.
+{opt doenv} load environment variables from a .env file.
 
 {pstd}
-Environment variables are often stored in a .env file in the project directory. Examples of such variables include API keys, file paths, URLs and much more that you don't want to share when working on a project. {cmd:doenv} loads these variables into locals in Stata.
+Environment variables are often stored in a .env file in the project directory. Examples of such variables include API keys, file paths, URLs and much more that you don't want to share when working on a project (i.e., Github). {cmd:doenv} loads these variables into locals in Stata.
 
 {marker prefix_notes}{...}
 {phang}{opth prefix(string)} adds a prefix to the local containing the environment variable.
@@ -44,9 +44,9 @@ Environment variables are often stored in a .env file in the project directory. 
 {marker examples}{...}
 {title:Examples}
 
-{pstd}Load an example .env file{p_end}
-{phang2}. {doenv using ".env"}{p_end}
-{phang2}. {display "`r(EXAMPLE_API_TOKEN)'"}{p_end}
+{pstd}Load an example .env file (view {browse "https://raw.githubusercontent.com/vikjam/doenv/master/test/.env": an example file}) {p_end}
+{phang2}. {stata doenv using ".env"}{p_end}
+{phang2}. {stata display "`r(EXAMPLE_API_TOKEN)'"}{p_end}
 
 {marker author}{...}
 {title:Author}
