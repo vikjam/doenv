@@ -15,7 +15,7 @@ program define doenv, rclass
             local `key_name' = "`key_value'"
             return local `key_name' "`key_value'"
         }
-        * Case: * A comment in .env
+        * Case: A comment in .env
         else if regexm(`"`line'"', "^\#") == 1 {
             break
         }

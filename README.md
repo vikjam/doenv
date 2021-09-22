@@ -1,12 +1,12 @@
 # doenv
-Load environment variables from a local .env file in Stata. A simplistic implementation of more sophiscated projects such as [dotenv](https://github.com/bkeepers/dotenv) and [python-dotenv](https://github.com/bkeepers/dotenv)
+Load environment variables from a local .env file in Stata. A simplistic implementation of more sophisticated projects such as [dotenv (Ruby)](https://github.com/bkeepers/dotenv), [python-dotenv](https://github.com/bkeepers/dotenv), [dotenv (R)](https://github.com/gaborcsardi/dotenv) and [DotEnv.jl](https://github.com/vmari/DotEnv.jl).
 
 ## Example usage
-Load an example .env file (view {browse "https://raw.githubusercontent.com/vikjam/doenv/master/test/.env": an example file}) {p_end}
+Load an example .env file.
 ```{stata}
 doenv using ".env"
 display "`r(EXAMPLE_API_TOKEN)'"
-. 
+```
 
 ## Installation
 ```{stata}
